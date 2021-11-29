@@ -5,52 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<header>
-    <h2>JavaScript Quiz</h2>
-</header>
 <body>
-    <p> Coding quiz challenge. you will have one minute to answer these questions. if you get one wrong time will be deducted. </p>
-    <button id="count">start quiz</button>
-    <section>
-        <div class="question1">
-            what is JavaScript?
-        <ul>
-            <li>A programming language</li>
-            <li>A supercar</li>
-            <li>A space station</li>
-        </ul>
-        </div>
-        <section>
-            <div class="question2">
-                Who can use JavaScript
-              <ul>
-            <li>A Pilot</li>
-            <li>A software engineer</li>
-            <li>Any one who is willing to learn</li>
-              </ul>
-            </div>
-            <section>
-                <div class="question3">
-                   True or False: Is this ";" manditory when writing JavaScript?
-                    <ul>
-            <li>Yes</li>
-            <li>No</li>
-                    </ul>
-                </div>
-                <section>
-                    <div class="question4">
-                        Who created JavaScript?
-                        <ul>
-            <li>James Smith</li>
-            <li>Brendan Eich</li>
-            <li>Brendan lou</li>
-                        </ul>
-                    </div>
-                
-                </section>
-            </section>
-        </section>
-    </section>
+    <div class="screen" id="introstart">
+    <header>
+        <h2 id="quiz">JavaScript Quiz</h2>
+
+</header>
+    <p id="intro"> Coding quiz challenge. you will have one minute to answer these questions. if you get one wrong time will be deducted. </p>
+    <button id="startBtn">start quiz</button>
+    </div>
+    <div class="screen" id="firstque">
+        <h3>question 1: What is JavaScript?</h3>
+        <div id="answerA">A programming language</div>
+        <div id="answerB">A radio button div</div>
+        <div id="answerC">A css property</div>
+     </div>
+     <div class="screen" id="secondque">
+         <h3>question 2: Who Invented JavaScript?</h3>
+         <div id="answerA2">James Smith</div>
+         <div id="answerB2">Brendon Eich</div>
+         <div id="answerC2">Tom Hanks</div>
+     </div>
+     <div class="screen" id="thirdque">
+         <h3>question 3: Who can use JavaScript?</h3>
+         <div id="answerA3">only software engineers</div>
+         <div id="answerB3">only engineers with Javascript backgrounds</div>
+         <div id="answerC3">anyone who is willing to learn</div>
+     </div>
+     <div class="screen" id="fourthque">
+         <h3>question 4: is the ";" manditory when writing JavaScript</h3>
+         <div id="answerA4">Yes</div>
+         <div id="answerB4">No</div>
+     </div>
+     <div class="screen" id="finalscreen">
+         <div>
+             <br><br>
+            Your are all done enter name for score!
+            
+         </div>
+        
+     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,25 +1,34 @@
-body {
-    font-family: 'Roboto', sans-serif;
+
+#quiz, #intro, #startBtn, .screen {
+    text-align: center;
+}
+
+body{
+    height: 100%;
 }
 
 
-.qa_box{
-    width: 500px; 
-    padding: 20px;
-    min-height:100px;
-    background-color: #fff;
-    box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
-    border-radius: 15px;
-    align-content: center;
+.screen {
+    position: relative;
+    top: 50vh;
+    transform: translateY(-10vh);
+    border: 4px solid blue;
+    padding-bottom: 20px;
+    margin:auto 25vw;
+  }
+  
+#finalscreen div {
+    padding-bottom: 10px;
+
 }
 
-.qa_box {
-    background-color: #0b58a7;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    margin: -20px -20px 0;
-    border-radius: 15px 15px 0 0;
-    font-size: 20px;
+#intro,
+#startBtn,
+.screen div {
+	font-family: Arial, sans-serif;
+}
+
+.screen div {
+    padding: 8px;
+    cursor: pointer;
 }

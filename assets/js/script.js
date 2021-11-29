@@ -1,21 +1,33 @@
 
 
-//this is my timer to start the quiz it doesnt work
-function startTimer(){
-var counter = 5;
-setInterval(function() {
-    counter--;
-    if (counter >= 0) {
-        span = document.getElementById("count");
-        span.innerHTML = "counter";
-    }
-    if (counter === 0) {
-        alert('sorry, out of time');
-        clearInterval(counter);
-    }
-}, 1000);
-}
-function start(){
-    document.getElementById("count").style="color:green;";
-    startTimer();
-};
+let answerA = document.querySelector("#answerA");
+let answerB = document.querySelector("#answerB");
+let answerC = document.querySelector("#answerC");
+
+$(".screen").hide();
+$("#introstart").show();
+
+$("#startBtn").click(function() {
+  $("#introstart").hide();
+  $("#firstque").show();
+});
+
+$("#firstque div").click(function() {
+    $("#firstque").hide();
+    $("#secondque").show();
+  });
+
+  $("#secondque div").click(function() {
+    $("#secondque").hide();
+    $("#thirdque").show();
+  });
+
+  $("#thirdque div").click(function() {
+    $("#thirdque").hide();
+    $("#fourthque").show();
+  });
+
+  $("#fourthque div").click(function() {
+    $("#fourthque").hide();
+    $("#finalscreen").show();
+  });
