@@ -1,9 +1,18 @@
 
 
-let answerA = document.querySelector("#answerA");
-let answerB = document.querySelector("#answerB");
-let answerC = document.querySelector("#answerC");
 
+
+
+
+
+
+
+
+
+
+
+
+//these are my questions 1-4
 $(".screen").hide();
 $("#introstart").show();
 
@@ -26,7 +35,7 @@ $("#firstque div").click(function() {
     $("#thirdque").hide();
     $("#fourthque").show();
   });
-
+//this is my final 
   $("#fourthque div").click(function() {
     $("#fourthque").hide();
     $("#finalscreen").show();
